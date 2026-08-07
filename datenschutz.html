@@ -25,49 +25,52 @@
             font-size: 0.9em;
             color: #888;
         }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
     <h1>Datenschutzerklärung</h1>
     <p><strong>Verantwortlicher:</strong> Nils Tassilo Rösler, Kleinbahnstraße 20, 06847 Dessau-Roßlau, nithroe@gmail.com</p>
 
-    <h2>1. Welche Daten werden erhoben?</h2>
-    <p>Unsere App „Good Grade“ erhebt folgende Daten:</p>
+    <h2>1. Welche Daten werden erhoben und wie werden sie gespeichert?</h2>
+    <p>Unsere App „Good Grade“ erhebt und verarbeitet folgende personenbezogene Daten:</p>
     <ul>
-        <li><strong>E-Mail-Adresse:</strong> Für die Anmeldung und Personalisierung deines Kontos.</li>
-        <li><strong>Geräte-ID / Werbe-ID:</strong> Zur Auslieferung von Werbung über Unity Ads.</li>
-        <li><strong>App-Einstellungen:</strong> Deine Zielnoten, Fächer und Noten (werden lokal auf deinem Gerät gespeichert).</li>
-        <li><strong>Nutzungsdaten:</strong> Informationen darüber, wie du die App verwendest (z.B. welche Funktionen du nutzt, wie oft du die App öffnest).</li>
+        <li><strong>E-Mail-Adresse:</strong> Für die eindeutige Identifikation deines Kontos und die Synchronisation deiner Daten über mehrere Geräte.</li>
+        <li><strong>Fächer, Noten, Lernziele und Gewichtungen:</strong> Die von dir eingegebenen Inhalte werden in einer Cloud-Datenbank (Firebase Firestore) gespeichert, um sie geräteübergreifend verfügbar zu machen.</li>
+        <li><strong>Geräte-ID / Werbe-ID:</strong> Wird ausschließlich für die Auslieferung von Werbung über Unity Ads verwendet (siehe Abschnitt 3).</li>
+        <li><strong>App-Einstellungen:</strong> Deine persönlichen Einstellungen (z.B. Abitur-Modus, Sortierung) werden sowohl lokal auf deinem Gerät (Hive) als auch in der Cloud gespeichert, um sie bei Neuinstallationen wiederherzustellen.</li>
+        <li><strong>Nutzungsdaten (optional):</strong> Informationen darüber, wie du die App verwendest (z.B. welche Funktionen du nutzt, wie oft du die App öffnest), werden anonymisiert erfasst, um die App zu verbessern. Diese Daten werden nicht mit deiner E-Mail-Adresse verknüpft.</li>
     </ul>
 
     <h2>2. Wofür werden die Daten genutzt?</h2>
     <ul>
         <li>Bereitstellung aller App-Funktionen (Notenverwaltung, Statistiken, Zielnoten-Rechner).</li>
-        <li>Anzeige personalisierter Werbung (über Unity Ads).</li>
+        <li>Synchronisation deiner Daten zwischen mehreren Geräten (über Firebase Firestore).</li>
+        <li>Anzeige von Werbung (über Unity Ads) – nur wenn du dich für eine werbefinanzierte Nutzung entscheidest.</li>
         <li>Verbesserung der App-Leistung und Fehlerbehebung.</li>
-        <li>Analyse des Nutzerverhaltens zur Optimierung der App (Firebase Analytics).</li>
+        <li>Analyse des Nutzerverhaltens zur Optimierung der Benutzererfahrung (anonymisiert).</li>
     </ul>
 
     <h2>3. Weitergabe an Dritte</h2>
     <p>Wir geben Daten an folgende Dienste weiter:</p>
     <ul>
-        <li><strong>Unity Ads:</strong> Für Werbeeinblendungen – siehe <a href="https://unity.com/legal/privacy-policy" target="_blank">Datenschutz von Unity</a>.</li>
-        <li><strong>Google Play Billing:</strong> Für In-App-Käufe (Premium-Abo).</li>
-        <li><strong>Google Analytics for Firebase:</strong> Zur Analyse der App-Nutzung – siehe <a href="https://policies.google.com/privacy" target="_blank">Datenschutz von Google</a>.</li>
+        <li><strong>Firebase / Firestore (Google LLC):</strong> Für die Cloud-Speicherung und Synchronisation deiner App-Daten (Fächer, Noten, Einstellungen). Die Daten werden auf Servern in den USA verarbeitet. Google ist nach dem <a href="https://www.dataprivacyframework.gov/" target="_blank">EU-US Data Privacy Framework</a> zertifiziert. Weitere Informationen: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase-Datenschutz</a>.</li>
+        <li><strong>Unity Ads (Unity Technologies SF):</strong> Für die Einblendung von Werbevideos. Dabei werden Gerätekennungen (Werbe-ID) und IP-Adressen verarbeitet. Weitere Informationen: <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity-Datenschutz</a>.</li>
+        <li><strong>Google Play Billing:</strong> Für In-App-Käufe (Premium-Abonnement) – hier werden keine personenbezogenen Daten an uns übermittelt, sondern nur die Bestätigung des Kaufs.</li>
     </ul>
-    <p>Alle anderen Daten bleiben lokal auf deinem Gerät (Hive-Datenbank).</p>
+    <p><strong>Hinweis:</strong> Alle anderen Daten (wie z.B. deine Noten und Fächer) werden <strong>nicht</strong> an Dritte weitergegeben – sie verbleiben in der Firebase-Cloud und auf deinem Gerät.</p>
 
-    <h2>4. Google Analytics for Firebase</h2>
-    <p>Diese App verwendet <strong>Google Analytics for Firebase</strong>, einen Analysedienst der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Firebase Analytics erfasst Daten zur Nutzung der App, wie z.B.:</p>
+    <h2>4. Speicherort und Dauer der Speicherung</h2>
     <ul>
-        <li>Erstmaliger App-Start (<code>first_open</code>)</li>
-        <li>Häufigkeit und Dauer der App-Nutzung</li>
-        <li>Verwendete Funktionen und Screens</li>
-        <li>Geräteinformationen (Modell, Betriebssystem-Version)</li>
-        <li>App-Instanz-ID (eine pseudonyme Kennung, die keine Rückschlüsse auf deine Person zulässt)</li>
+        <li><strong>Lokal (Hive):</strong> Eine Kopie deiner Daten wird auf deinem Gerät gespeichert, damit die App auch offline funktioniert.</li>
+        <li><strong>Cloud (Firestore):</strong> Deine Daten werden in der Firebase-Cloud gespeichert, um sie geräteübergreifend synchron zu halten. Die Speicherung erfolgt solange, bis du dein Konto löschst oder die Daten selbst entfernst.</li>
+        <li><strong>Löschung:</strong> Du kannst jederzeit die Löschung aller deiner bei uns gespeicherten Daten beantragen (Kontakt siehe unten).</li>
     </ul>
-    <p>Diese Daten werden verwendet, um die App zu verbessern, Nutzungsverhalten zu verstehen und Fehler zu beheben. Die Datenverarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du beim ersten Start der App erteilen oder in den Einstellungen widerrufen kannst.</p>
-    <p>Die Daten werden auf Servern von Google in den USA verarbeitet. Google ist nach dem <a href="https://www.dataprivacyframework.gov/" target="_blank">EU-US Data Privacy Framework</a> zertifiziert und gewährleistet ein angemessenes Datenschutzniveau. Weitere Informationen findest du in der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.</p>
 
     <h2>5. Deine Rechte</h2>
     <p>Du hast jederzeit das Recht auf:</p>
@@ -75,14 +78,21 @@
         <li>Auskunft über deine gespeicherten Daten,</li>
         <li>Berichtigung falscher Daten,</li>
         <li>Löschung deiner Daten,</li>
-        <li>Widerspruch gegen die Datenverarbeitung.</li>
+        <li>Widerspruch gegen die Datenverarbeitung,</li>
+        <li>Widerruf erteilter Einwilligungen (z.B. für personalisierte Werbung).</li>
     </ul>
     <p>Kontaktiere uns dazu unter der unten genannten E-Mail-Adresse.</p>
 
-    <h2>6. Kontakt</h2>
+    <h2>6. Datensicherheit</h2>
+    <p>Die Übertragung deiner Daten zwischen deinem Gerät und der Firebase-Cloud erfolgt ausschließlich über eine verschlüsselte HTTPS-Verbindung. Deine Daten werden auf den Servern von Google mit branchenüblichen Sicherheitsmaßnahmen geschützt.</p>
+
+    <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+    <p>Wir behalten uns vor, diese Datenschutzerklärung bei Änderungen der Datenverarbeitung oder gesetzlicher Anforderungen anzupassen. Die aktuelle Version ist stets auf dieser Seite abrufbar.</p>
+
+    <h2>8. Kontakt</h2>
     <p>Bei Fragen zum Datenschutz erreichst du uns unter:<br />
     <strong>nithroe@gmail.com</strong></p>
 
-    <p class="footer"><em>Stand: Juli 2026</em></p>
+    <p class="footer"><em>Stand: August 2026</em></p>
 </body>
 </html>
