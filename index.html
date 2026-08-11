@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8" />
@@ -19,7 +19,6 @@
         a { text-decoration:none; color:inherit; }
         .container { max-width:1100px; margin:0 auto; padding:0 20px; }
 
-        /* ===== HEADER ===== */
         header {
             background:#1a1a1a;
             padding:16px 0;
@@ -59,7 +58,6 @@
         }
         .btn-outline:hover { background:#d35400; color:#fff; }
 
-        /* ===== HERO ===== */
         .hero {
             background:linear-gradient(135deg,#1a1a1a 0%,#2c2c2c 100%);
             color:#fff;
@@ -89,14 +87,12 @@
         }
         .hero .badges i { color:#e67e22; font-size:18px; }
 
-        /* ===== SECTIONS ===== */
         section { padding:70px 0; }
         .section-title { font-size:32px; font-weight:700; margin-bottom:12px; color:#1a1a1a; }
         .section-title span { color:#d35400; }
         .section-sub { color:#666; max-width:600px; margin-bottom:40px; }
         .two-col { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
 
-        /* ===== ÜBER MICH ===== */
         #ueber-mich { background:#fff8f0; }
         #ueber-mich .highlight { color:#d35400; font-weight:600; }
         .feature-grid {
@@ -117,7 +113,6 @@
         .feature-card h4 { font-size:16px; font-weight:600; }
         .feature-card p { font-size:14px; color:#555; }
 
-        /* ===== ANGEBOT ===== */
         #angebot { background:#fff; }
         .offer-box {
             background:#fff8f0;
@@ -146,7 +141,6 @@
         }
         .offer-box ul li i { color:#d35400; width:20px; }
 
-        /* ===== KONTAKT ===== */
         #kontakt { background:#fff8f0; }
         .contact-card {
             background:#fff;
@@ -159,7 +153,6 @@
         .contact-card i { color:#d35400; width:28px; font-size:18px; }
         .contact-card a { color:#d35400; font-weight:600; }
 
-        /* ===== FOOTER ===== */
         footer {
             background:#1a1a1a;
             color:#aaa;
@@ -185,7 +178,6 @@
         footer .footer-links a:hover { color:#d35400; }
         footer .copy { font-size:13px; color:#555; }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width:768px) {
             .two-col { grid-template-columns:1fr; }
             header .container { flex-direction:column; gap:12px; }
@@ -236,28 +228,30 @@
         <div class="two-col">
             <div>
                 <p style="font-size:17px; margin-bottom:16px;">
-                    Ich bin <strong>Nils</strong> – und ich stehe kurz vor meinem Studium. 
-                    In den letzten Jahren habe ich gemerkt: Mathe ist nicht schwer – 
+                    Ich bin <strong>Nils</strong> – und ich stehe kurz vor meinem Studium.
+                    In den letzten Jahren habe ich gemerkt: Mathe ist nicht schwer –
                     es kommt nur auf die richtige Erklärung an.
                 </p>
                 <p style="font-size:17px; margin-bottom:16px;">
-                    Mein Ansatz: Ich erkläre nicht einfach die Lösung – 
-                    ich erkläre, <strong>warum</strong> etwas so funktioniert. 
+                    Mein Ansatz: Ich erkläre nicht einfach die Lösung –
+                    ich erkläre, <strong>warum</strong> etwas so funktioniert.
                     Das macht den Unterschied zwischen Auswendiglernen und echtem Verständnis.
                 </p>
                 <p style="font-size:17px; margin-bottom:16px;">
-                    <span class="highlight">Kurz vor dem Studium</span> · 
-                    <span class="highlight">Klassen 5–10</span> · 
+                    <span class="highlight">Kurz vor dem Studium</span> ·
+                    <span class="highlight">Klassen 5–10</span> ·
                     <span class="highlight">100% flexibel</span>
                 </p>
                 <p style="font-size:15px; color:#555; border-left:4px solid #d35400; padding-left:16px;">
-                    <em>„Nebenbei habe ich auch eine eigene App entwickelt: 
+                    <em>„Nebenbei habe ich auch eine eigene App entwickelt:
                     <strong>GoodGrade</strong> – damit können Schüler ihre Noten ganz einfach im Blick behalten.“</em>
                 </p>
             </div>
             <div>
                 <div style="background:#d3540010; border-radius:20px; padding:30px; text-align:center; border:1px solid #d3540020;">
-                    <i class="fas fa-user-graduate" style="font-size:48px; color:#d35400; margin-bottom:12px;"></i>
+                    <!-- ===== PROFILBILD ===== -->
+                    <img src="profil.jpg" alt="Nils Rößler"
+                         style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:4px solid #d35400; margin-bottom:12px;" />
                     <h3 style="font-size:22px; margin-bottom:4px;">Nils Rößler</h3>
                     <p style="color:#666;">Online-Nachhilfe · Mathe · Klassen 5–10</p>
                     <div style="display:flex; justify-content:center; gap:16px; margin-top:16px; flex-wrap:wrap;">
@@ -332,10 +326,10 @@
             <a href="#angebot">Angebot</a>
             <a href="#kontakt">Kontakt</a>
             <a href="/datenschutz.html">Datenschutz</a>
-            <a href="/app-ads.txt">app-ads.txt</a>
+            <!-- app-ads.txt wurde entfernt -->
         </div>
         <p style="margin:0;">
-            <i class="fas fa-envelope" style="color:#d35400;"></i> mathehilfe.nils@gmail.com &nbsp;|&nbsp; 
+            <i class="fas fa-envelope" style="color:#d35400;"></i> mathehilfe.nils@gmail.com &nbsp;|&nbsp;
             <i class="fas fa-phone" style="color:#d35400;"></i> +49 1575 8164027
         </p>
         <p class="copy">© 2026 Nils Rößler · MatheNachhilfe</p>
