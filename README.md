@@ -452,13 +452,13 @@
 <section class="hero">
     <div class="container">
         <h1>Mathe <span>endlich</span> verstehen.</h1>
-        <p>Online-Nachhilfe in Mathematik für Klassen 5–10 – persönlich, geduldig und genau auf dich abgestimmt.</p>
+        <p>Online-Nachhilfe in Mathematik für <strong>Klassen 5–12</strong> – persönlich, geduldig und genau auf dich abgestimmt.</p>
         <div class="buttons">
             <a href="#kontakt" class="btn-primary">Kostenloses Erstgespräch</a>
             <a href="#angebot" class="btn-outline">Angebot ansehen</a>
         </div>
         <div class="badges">
-            <span><i class="fas fa-users"></i> Klassen 5–10</span>
+            <span><i class="fas fa-users"></i> <strong>Klassen 5–12</strong></span>
             <span><i class="fas fa-clock"></i> Flexible Zeiten</span>
             <span><i class="fas fa-laptop"></i> 100% online</span>
         </div>
@@ -497,7 +497,7 @@
                 <div style="background:#80002010; border-radius:20px; padding:30px; text-align:center; border:1px solid #80002020;">
                     <i class="fas fa-user-graduate" style="font-size:48px; color:#800020; margin-bottom:12px;"></i>
                     <h3 style="font-size:22px; margin-bottom:4px;">Nils Rößler</h3>
-                    <p style="color:#666;">Online-Nachhilfe · Mathe · Klassen 5–10</p>
+                    <p style="color:#666;">Online-Nachhilfe · Mathe · <strong>Klassen 5–12</strong></p>
                     <div style="display:flex; justify-content:center; gap:16px; margin-top:16px; flex-wrap:wrap;">
                         <span style="background:#800020; color:#fff; padding:4px 14px; border-radius:20px; font-size:12px; font-weight:600;">Aktuelles Fachwissen</span>
                         <span style="background:#800020; color:#fff; padding:4px 14px; border-radius:20px; font-size:12px; font-weight:600;">Individuell</span>
@@ -505,7 +505,7 @@
                 </div>
                 <div class="feature-grid">
                     <div class="feature-card"><i class="fas fa-graduation-cap"></i><h4>Kurz vor Studium</h4><p>Aktuelles Fachwissen</p></div>
-                    <div class="feature-card"><i class="fas fa-chalkboard-teacher"></i><h4>Klassen 5–10</h4><p>Alle Schultypen</p></div>
+                    <div class="feature-card"><i class="fas fa-chalkboard-teacher"></i><h4>Klassen 5–12</h4><p>Alle Schultypen</p></div>
                     <div class="feature-card"><i class="fas fa-calendar-alt"></i><h4>100% flexibel</h4><p>Zeiten nach Absprache</p></div>
                 </div>
             </div>
@@ -526,7 +526,7 @@
                 <li><i class="fas fa-check"></i> Themen gründlich erarbeiten</li>
                 <li><i class="fas fa-check"></i> Regelmäßige oder einmalige Stunden</li>
                 <li><i class="fas fa-check"></i> Hausaufgaben &amp; Prüfungsvorbereitung</li>
-                <li><i class="fas fa-check"></i> Klassen 5–10, alle Schultypen</li>
+                <li><i class="fas fa-check"></i> <strong>Klassen 5–12</strong>, alle Schultypen</li>
                 <li><i class="fas fa-check"></i> Dein Tempo, deine Fragen</li>
                 <li><i class="fas fa-check"></i> Termine flexibel nach Absprache</li>
             </ul>
