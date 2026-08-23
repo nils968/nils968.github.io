@@ -485,7 +485,7 @@
                 </p>
                 <p style="font-size:17px; margin-bottom:16px;">
                     <span class="highlight">Kurz vor dem Studium</span> · 
-                    <span class="highlight">Klassen 5–10</span> · 
+                    <span class="highlight">Klassen 5–12</span> · 
                     <span class="highlight">100% flexibel</span>
                 </p>
                 <p style="font-size:15px; color:#555; border-left:4px solid #800020; padding-left:16px;">
