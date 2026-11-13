@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einladung – Good Grade</title>
+    <meta name="description" content="Du wurdest zu Good Grade eingeladen – mit dem Code bekommst du 1 Woche Premium geschenkt." />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #eee;
+            padding: 20px;
+            max-width: 520px;
+            margin: auto;
+            line-height: 1.6;
+            text-align: center;
+        }
+        h1 { color: #800020; margin-bottom: 4px; }
+        .box {
+            background: #1e1e1e;
+            padding: 22px 18px;
+            border-radius: 14px;
+            margin: 20px 0;
+        }
+        .label { color: #999; font-size: 0.9em; margin: 0; }
+        .code {
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin: 6px 0 12px;
+        }
+        button, .store {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        button {
+            background: transparent;
+            color: #eee;
+            border: 1.5px solid #800020;
+        }
+        .store {
+            background: #800020;
+            color: #fff;
+            margin-top: 12px;
+            border: none;
+        }
+        .note { color: #888; font-size: 0.85em; }
+        ol { text-align: left; padding-left: 22px; }
+    </style>
+</head>
+<body>
+    <h1>Good Grade</h1>
+    <p>Du wurdest eingeladen! Behalte deine Noten im Blick und erreiche deinen Wunschschnitt.</p>
+
+    <div class="box" id="codeBox">
+        <p class="label">Dein Einladungscode</p>
+        <p class="code" id="code">–</p>
+        <button id="copy" type="button">Code kopieren</button>
+        <p class="note" style="margin-top:10px">Mit diesem Code bekommst du 1 Woche Premium geschenkt.</p>
+    </div>
+
+    <a class="store" href="https://apps.apple.com/app/id6810319417">Im App Store laden (iPhone/iPad)</a>
+    <a class="store" href="https://play.google.com/store/apps/details?id=com.nils.good_grade">Bei Google Play laden (Android)</a>
+
+    <div class="box">
+        <ol>
+            <li>App herunterladen</li>
+            <li>„Registrieren“ wählen</li>
+            <li>Den Code ins Feld „Einladungscode“ eintragen</li>
+        </ol>
+    </div>
+
+    <p class="note">Fragen? <a style="color:#e0738a" href="/support.html">Support</a></p>
+
+    <script>
+        // Nur Buchstaben, Ziffern und Bindestrich anzeigen
+        var roh = new URLSearchParams(location.search).get('code') || '';
+        var code = roh.toUpperCase().replace(/[^A-Z0-9-]/g, '').slice(0, 12);
+        if (code) {
+            document.getElementById('code').textContent = code;
+        } else {
+            document.getElementById('codeBox').style.display = 'none';
+        }
+        document.getElementById('copy').addEventListener('click', function () {
+            var btn = this;
+            function fertig() { btn.textContent = 'Kopiert ✓'; }
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(code).then(fertig, fertig);
+            } else {
+                fertig();
+            }
+        });
+    </script>
+</body>
+</html>
